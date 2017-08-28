@@ -20,8 +20,7 @@ export default {
 	external,
 	useStrict: false,
 	globals: {
-		'preact': 'preact',
-		'prop-types': 'PropTypes'
+		'preact': 'preact'
 	},
 	plugins: [
 		format==='umd' && memory({

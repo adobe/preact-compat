@@ -4,7 +4,6 @@ import React, {
 	createElement,
 	cloneElement,
 	Component,
-	PropTypes,
 	unstable_renderSubtreeIntoContainer,
 	__spread
 } from '../src';
@@ -229,15 +228,6 @@ describe('preact-compat', () => {
 				.to.have.property('Component')
 				.that.is.a('function')
 				.that.equals(Component);
-		});
-	});
-
-	describe('PropTypes', () => {
-		it('should be exported', () => {
-			expect(React)
-				.to.have.property('PropTypes')
-				.that.is.an('object')
-				.that.equals(PropTypes);
 		});
 	});
 
